@@ -1,5 +1,5 @@
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![License](https://img.shields.io/github/license/andrew-field/REPONAME)](./LICENSE)
 [![Go Report Card](https://goreportcard.com/badge/github.com/andrew-field/REPONAME)](https://goreportcard.com/report/github.com/andrew-field/REPONAME)
-[![Codecov](codecov link)](https://codecov.io/gh/andrew-field/REPONAME)
+[![Codecov](https://codecov.io/gh/andrew-field/REPONAME/branch/master/graph/badge.svg)](https://codecov.io/gh/andrew-field/REPONAME)
 [![Build Test](https://github.com/andrew-field/REPONAME/actions/workflows/build-test.yml/badge.svg)](https://github.com/andrew-field/REPONAME/actions/workflows/build-test.yml)
 [![CodeQL Analysis](https://github.com/andrew-field/REPONAME/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/andrew-field/REPONAME/actions/workflows/codeql-analysis.yml)
