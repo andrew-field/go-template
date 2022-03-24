@@ -1,8 +1,15 @@
-name: build-test
+name: Build and test
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
 
   build_test:
+    name: Call build and test action
     uses: andrew-field/reusable-workflows/.github/workflows/build-test.yml@master
+    with:
+      test_flags: -race
