@@ -4,4 +4,4 @@
 [![Build and test](https://github.com/andrew-field/REPONAME/actions/workflows/build-test.yml/badge.svg)](https://github.com/andrew-field/REPONAME/actions/workflows/build-test.yml)
 [![CodeQL](https://github.com/andrew-field/REPONAME/actions/workflows/codeql.yml/badge.svg)](https://github.com/andrew-field/REPONAME/actions/workflows/codeql.yml)
 
-Add CodeQL action from New workflow and Dependabot from Settings -> Code security and analysis
+Add CodeQL action from New workflow and Dependabot from Settings -> Code security and analysis (Package-ecosystem is gomod)
