@@ -7,4 +7,5 @@
 [![CodeQL](https://github.com/andrew-field/REPONAME/actions/workflows/codeql.yml/badge.svg)](https://github.com/andrew-field/REPONAME/actions/workflows/codeql.yml)
 [![Lint Code Base](https://github.com/andrew-field/REPONAME/actions/workflows/linter.yml/badge.svg)](https://github.com/andrew-field/REPONAME/actions/workflows/linter.yml)
 
-Add CodeQL and Dependabot workflow from Settings -> Code security and analysis.
+1. Add CodeQL and Dependabot workflow from Settings -> Code security and analysis.
+2. Update branch protection rule to require status checks.
