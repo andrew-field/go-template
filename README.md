@@ -9,4 +9,4 @@
 
 1. Update this readme with the correct REPONAME. Update or remove the title. Remove badges as necessary if the repository is private.
 2. Add CodeQL and Dependabot workflow from Settings -> Code security and analysis (Package ecosystem should be "gomod"). Can't add CodeQL if the repository is private.
-3. Update branch protection rule to require status checks. Can't add this rule if the repository is private.
+3. Update branch protection rule to require status checks, the branch is up to date and commits require a signature. Can't add these rules if the repository is private.
