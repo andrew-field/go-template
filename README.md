@@ -8,5 +8,5 @@
 [![Lint Code Base](https://github.com/andrew-field/REPONAME/actions/workflows/linter.yml/badge.svg)](https://github.com/andrew-field/REPONAME/actions/workflows/linter.yml)
 
 1. Update this readme with the correct REPONAME. Update or remove the title.
-2. Add CodeQL and Dependabot workflow from Settings -> Code security and analysis (Package ecosystem should be "gomod").
+2. Add CodeQL and Dependabot workflow from Settings -> Code security and analysis (Package ecosystem should be "gomod"). Can't add CodeQL if the repository is private.
 3. Update branch protection rule to require status checks.
