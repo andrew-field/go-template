@@ -14,3 +14,4 @@
 5. Add CodeQL code scanning from Settings -> Code security and analysis. Can't add CodeQL if the repository is private.
 6. Add Dependabot version updates from Settings -> Code security and analysis (Package ecosystem should be "gomod").
 7. Update branch protection rule to require status checks, the branch is up to date and commits require a signature. Can't add these rules if the repository is private.
+8. Update github actions workflow permissions to read and write. Allow github actions to create and approve pull requests.
