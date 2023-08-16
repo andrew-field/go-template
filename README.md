@@ -11,5 +11,6 @@
 2. Remove badges as necessary. If the repository is private, can remove go report card, codecov, codeql.
 3. Update this readme (badge links) with the correct REPONAME.
 4. If repository is private, remove the go report card workflow.
-5. Add CodeQL and Dependabot workflow from Settings -> Code security and analysis (Package ecosystem should be "gomod"). Can't add CodeQL if the repository is private.
-6. Update branch protection rule to require status checks, the branch is up to date and commits require a signature. Can't add these rules if the repository is private.
+5. Add CodeQL code scanning from Settings -> Code security and analysis. Can't add CodeQL if the repository is private.
+6. Add Dependabot version updates from Settings -> Code security and analysis (Package ecosystem should be "gomod").
+7. Update branch protection rule to require status checks, the branch is up to date and commits require a signature. Can't add these rules if the repository is private.
