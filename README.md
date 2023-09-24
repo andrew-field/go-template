@@ -15,4 +15,4 @@
 6. Add Dependabot version updates from Settings -> Code security and analysis (Package ecosystem should be "gomod").
 7. Update branch protection rule to require status checks, the branch is up to date and commits require a signature. Can't add these rules if the repository is private.
 8. Update github actions workflow permissions to read and write. Allow github actions to create and approve pull requests.
-9. Make sure "Automatically delete head branches" is checked in settings
+9. Make sure "Automatically delete head branches" and "Always suggest updating pull request branches" is checked in settings main page.
