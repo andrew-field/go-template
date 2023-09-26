@@ -8,7 +8,7 @@
 [![Lint Code Base](https://github.com/andrew-field/REPONAME/actions/workflows/linter.yml/badge.svg)](https://github.com/andrew-field/REPONAME/actions/workflows/linter.yml)
 
 1. Update title (Don't remove for linting purposes).
-2. Remove badges as necessary. If the repository is private, can remove go report card, codecov, codeql.
+2. Remove badges as necessary. If the repository is private, can remove go report card, codecov, codeql. Remove licence badge if the repository will have no licence.
 3. Update this readme (badge links) with the correct REPONAME.
 4. If repository is private, remove the go report card workflow.
 5. Add CodeQL code scanning from Settings -> Code security and analysis. Can't add CodeQL if the repository is private.
