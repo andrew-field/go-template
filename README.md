@@ -4,14 +4,14 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/andrew-field/REPONAME)](https://goreportcard.com/report/github.com/andrew-field/REPONAME)
 [![Codecov](https://codecov.io/gh/andrew-field/REPONAME/branch/master/graph/badge.svg)](https://codecov.io/gh/andrew-field/REPONAME)
 [![Build and test](https://github.com/andrew-field/REPONAME/actions/workflows/build-test.yml/badge.svg)](https://github.com/andrew-field/REPONAME/actions/workflows/build-test.yml)
-[![CodeQL](https://github.com/andrew-field/REPONAME/actions/workflows/codeql.yml/badge.svg)](https://github.com/andrew-field/REPONAME/actions/workflows/codeql.yml)
+[![CodeQL](https://github.com/andrew-field/REPONAME/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/andrew-field/REPONAME/actions/workflows/github-code-scanning/codeql)
 [![Lint Code Base](https://github.com/andrew-field/REPONAME/actions/workflows/linter.yml/badge.svg)](https://github.com/andrew-field/REPONAME/actions/workflows/linter.yml)
 
 1. Update title (Don't remove for linting purposes).
 2. Remove badges as necessary. If the repository is private, can remove go report card, Codecov, codeql. Remove licence badge if the repository will have no licence.
 3. Update this readme (badge links) with the correct REPONAME.
 4. If repository is private, remove the go report card workflow.
-5. Add CodeQL code scanning from Settings -> Code security and analysis. Can't add CodeQL if the repository is private.
+5. Add CodeQL code scanning from Settings -> Code security and analysis, use default settings. Can't add CodeQL if the repository is private.
 6. Add Dependabot version updates from Settings -> Code security and analysis. There should be two update sections, package-ecosystem "gomod" and package-ecosystem "github-actions". Should look similar to:
 - package-ecosystem: "gomod"
   directory: "/"
