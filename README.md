@@ -23,4 +23,4 @@
     interval: "weekly"
 7. In settings->branches, update branch protection rule to require status checks, the branch is up to date and commits require a signature. Can't add these rules if the repository is private.
 8. In settiings->actions, update GitHub actions workflow permissions to read and write. Allow GitHub actions to create and approve pull requests.
-9. Check "Automatically delete head branches" and "Always suggest updating pull request branches" in settings main page.
+9. Check "Automatically delete head branches" and "Always suggest updating pull request branches" in settings->general page.
