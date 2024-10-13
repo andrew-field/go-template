@@ -10,7 +10,6 @@ on:
   workflow_dispatch:
 
 jobs:
-
   lint:
     name: Lint code base
     uses: andrew-field/reusable-workflows/.github/workflows/linter.yml@master
