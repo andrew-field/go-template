@@ -8,7 +8,6 @@ on:
   workflow_dispatch:
 
 jobs:
-
   post-request:
     name: Call refresh go report card action
     uses: andrew-field/reusable-workflows/.github/workflows/refresh-go-report-card.yml@master
