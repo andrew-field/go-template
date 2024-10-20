@@ -11,6 +11,10 @@ on:
 
 permissions: {}
 
+# For private repoistories, it should be this.
+#permissions:
+  #contents: read
+
 jobs:
   build_test:
     name: Call build and test action
