@@ -11,6 +11,10 @@ on:
 
 permissions: {}
 
+#For private repositories, it should be this.
+#permissions:
+  #contents: read
+
 jobs:
   lint:
     name: Lint code base
