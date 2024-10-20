@@ -13,8 +13,9 @@
 4. Go to Code Cov and copy the badge markdown to the top and bottom of the readme. Copy the icicle svg link and replace the link in the code cov - svg markdown at the bottom.
 5. Copy global upload token from Code cov and add as a repository secret.
 6. If repository is private, remove the go report card workflow.
-7. If repository is public, add CodeQL code scanning from Settings -> Code security and analysis, use default settings.
-8. Add Dependabot version updates from Settings -> Code security and analysis. There should be two update sections, package-ecosystem "gomod" and package-ecosystem "github-actions". Should look similar to:
+7. Go through the workflow yaml files and delete the incorrect action permissions depending on whether the repository is private or not. The files have the necessary comments.
+8. If repository is public, add CodeQL code scanning from Settings -> Code security and analysis, use default settings.
+9. Add Dependabot version updates from Settings -> Code security and analysis. There should be two update sections, package-ecosystem "gomod" and package-ecosystem "github-actions". Should look similar to:
 - package-ecosystem: "gomod"
   directory: "/"
   schedule:
