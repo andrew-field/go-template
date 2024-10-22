@@ -15,18 +15,21 @@
 6. If repository is private, remove the go report card workflow.
 7. Go through the workflow yaml files and delete the incorrect action permissions depending on whether the repository is private or not. The files have the necessary comments.
 8. If repository is public, add CodeQL code scanning from Settings -> Code security and analysis, use default settings.
-9. Add Dependabot version updates from Settings -> Code security and analysis. There should be two update sections, package-ecosystem "gomod" and package-ecosystem "github-actions". Should look similar to:
-- package-ecosystem: "gomod"
-  directory: "/"
-  schedule:
-    interval: "weekly"
-- package-ecosystem: "github-actions"
-  directory: "/"
-  schedule:
-    interval: "weekly"
-10. In settings->branches, update branch protection rule to require status checks, the branch is up to date and commits require a signature. Can't add these rules if the repository is private.
-11. In settings->actions, allow GitHub actions to create and approve pull requests.
-12. In settings->secrets and variables->actions, add a repository secret ACTIONS_RUNNER_DEBUG as true, to allow debug logging in github actions.
-13. Check "Automatically delete head branches" and "Always suggest updating pull request branches" in settings->general page.
+9. Add Dependabot version updates from Settings -> Code security and analysis. Enable all options.
+10. Update the dependabot file. There should be two update sections, package-ecosystem "gomod" and package-ecosystem "github-actions". Should look similar to:
+  ```
+  -  package-ecosystem: "gomod"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+  ```
+11. In settings->branches, update branch protection rule to require status checks, the branch is up to date and commits require a signature. Can't add these rules if the repository is private.
+12. In settings->actions, allow GitHub actions to create and approve pull requests.
+13. In settings->secrets and variables->actions, add a repository secret ACTIONS_RUNNER_DEBUG as true, to allow debug logging in github actions.
+14. Check "Automatically delete head branches" and "Always suggest updating pull request branches" in settings->general page.
 
 [Code cov icicle svg markdown goes here]
