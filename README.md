@@ -15,7 +15,7 @@
 6. If repository is private, remove the go report card workflow.
 7. Go through the workflow yaml files and delete the incorrect action permissions depending on whether the repository is private or not. The files have the necessary comments.
 8. If repository is public, add CodeQL code scanning from Settings -> Code security and analysis, use default settings.
-9. Add Dependabot version updates from Settings -> Code security and analysis. Enable all options.
+9. Add Dependabot version updates from Settings -> Code security and analysis. Enable all options (If the repo is private, do not need to enable "Dependabot on self-hosted runners").
 10. Update the dependabot file. There should be two update sections, package-ecosystem "gomod" and package-ecosystem "github-actions". Should look similar to:
   ```
   -  package-ecosystem: "gomod"
