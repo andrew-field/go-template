@@ -27,9 +27,10 @@
     schedule:
       interval: "weekly"
   ```
-11. In settings->branches, update branch protection rule to require status checks, the branch is up to date and commits require a signature. Can't add these rules if the repository is private.
-12. In settings->actions, allow GitHub actions to create and approve pull requests.
-13. In settings->secrets and variables->actions, add a repository secret ACTIONS_RUNNER_DEBUG as true, to allow debug logging in github actions.
-14. Check "Automatically delete head branches" and "Always suggest updating pull request branches" in settings->general page.
+11. If public, in settings-> code security, enable private vulnerability reporting.
+12. In settings->branches, update branch protection rule to require status checks, the branch is up to date and commits require a signature. Can't add these rules if the repository is private.
+13. In settings->actions, allow GitHub actions to create and approve pull requests.
+14. In settings->secrets and variables->actions, add a repository secret ACTIONS_RUNNER_DEBUG as true, to allow debug logging in github actions.
+15. Check "Automatically delete head branches" and "Always suggest updating pull request branches" in settings->general page.
 
 [Code cov icicle svg markdown goes here]
