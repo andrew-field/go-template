@@ -4,8 +4,9 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/andrew-field/REPONAME)](https://goreportcard.com/report/github.com/andrew-field/REPONAME)
 [Code cov markdown goes here]
 [![Build and test](https://github.com/andrew-field/REPONAME/actions/workflows/build-test.yml/badge.svg)](https://github.com/andrew-field/REPONAME/actions/workflows/build-test.yml)
+[![Go Linter](https://github.com/andrew-field/REPONAME/actions/workflows/go-linter.yml/badge.svg)](https://github.com/andrew-field/REPONAME/actions/workflows/go-linter.yml)
 [![CodeQL](https://github.com/andrew-field/REPONAME/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/andrew-field/REPONAME/actions/workflows/github-code-scanning/codeql)
-[![Lint Code Base](https://github.com/andrew-field/REPONAME/actions/workflows/linter.yml/badge.svg)](https://github.com/andrew-field/REPONAME/actions/workflows/linter.yml)
+[![Super Linter](https://github.com/andrew-field/REPONAME/actions/workflows/super-linter.yml/badge.svg)](https://github.com/andrew-field/REPONAME/actions/workflows/super-linter.yml)
 
 1. Update title (Don't remove for linting purposes).
 2. Remove badges as necessary. If the repository is private, can remove go report card and codeql. Remove licence badge if the repository will have no licence.
