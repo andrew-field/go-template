@@ -1,0 +1,21 @@
+# Can delete this file for repositories without releases.
+
+name: Release Please
+
+on:
+  push:
+    branches: [master]
+
+# Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release-please:
+    name: Call release please
+    uses: andrew-field/reusable-workflows/.github/workflows/release-please.yml@master
+
+    secrets: inherit
