@@ -1,6 +1,8 @@
 # Title
 
 [![License](https://img.shields.io/github/license/andrew-field/REPONAME)](./LICENSE)
+[![Go Doc](https://pkg.go.dev/badge/github.com/andrew-field/REPONAME?status.svg)](https://pkg.go.dev/github.com/andrew-field/REPONAME "GoDoc")
+[![GitHub Release](https://img.shields.io/github/v/release/andrew-field/REPONAME)](https://github.com/andrew-field/REPONAME/releases/latest "GitHub release")
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![Go Report Card](https://goreportcard.com/badge/github.com/andrew-field/REPONAME)](https://goreportcard.com/report/github.com/andrew-field/REPONAME)
 [Code cov markdown goes here]
@@ -9,7 +11,10 @@
 [![Super Linter](https://github.com/andrew-field/REPONAME/actions/workflows/super-linter.yml/badge.svg)](https://github.com/andrew-field/REPONAME/actions/workflows/super-linter.yml)
 
 1. Update title (Don't remove for linting purposes).
-2. Remove badges as necessary. If the repository is private, can remove go report card and codeql. Remove licence badge if the repository will have no licence.
+2. Remove badges as necessary.
+   - If the repository is private, can remove go report card and codeql.
+   - Remove licence badge if the repository will have no licence.
+   - Remove the Go Doc and Github Release badge if the repository will not have a release.
 3. Update this readme (badge links) with the correct REPONAME.
 4. Go to Code Cov and copy the badge markdown to the top and bottom of the readme. Copy the icicle svg link and replace the link in the code cov - svg markdown at the bottom.
 5. Copy global upload token from Code cov and add as a repository secret.
@@ -29,9 +34,9 @@
     schedule:
       interval: "weekly"
   ```
-11. If public, in settings-> code security, enable private vulnerability reporting.
-12. In settings->branches, update branch protection rule to require status checks, the branch is up to date and commits require a signature. Can't add these rules if the repository is private.
-13. In settings->actions, allow GitHub actions to create and approve pull requests.
-14. Check "Automatically delete head branches" and "Always suggest updating pull request branches" in settings->general page.
+12. If public, in settings-> code security, enable private vulnerability reporting.
+13. In settings->branches, update branch protection rule to require status checks, the branch is up to date and commits require a signature. Can't add these rules if the repository is private.
+14. In settings->actions, allow GitHub actions to create and approve pull requests.
+15. Check "Automatically delete head branches" and "Always suggest updating pull request branches" in settings->general page.
 
 [Code cov icicle svg markdown goes here]
