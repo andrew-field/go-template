@@ -17,13 +17,15 @@
    - Remove the Go Doc and Github Release badge if the repository will not have a release.
 3. Update this readme (badge links) with the correct REPONAME.
 4. Go to Code Cov and copy the badge markdown to the top and bottom of the readme. Copy the icicle svg link and replace the link in the code cov - svg markdown at the bottom.
-5. Copy global upload token from Code cov and add as a repository secret.
-6. If repository is private, remove the go report card workflow.
-7. Go through the workflow yaml files and delete the incorrect action permissions depending on whether the repository is private or not. The files have the necessary comments.
-8. Delete the entire release-please yaml file if the repository will not have releases.
-9. If repository is public, add CodeQL code scanning from Settings -> Code security and analysis, use default settings.
-10. Add Dependabot version updates from Settings -> Code security and analysis. Enable all options (If the repo is private, do not need to enable "Dependabot on self-hosted runners").
-11. Update the dependabot file. There should be two update sections, package-ecosystem "gomod" and package-ecosystem "github-actions". Should look similar to:
+5. Add the global upload token from Code cov as CODECOV_TOKEN as an action repository secret.
+6. Add the bumb go version personal access token as BUMP_GO_VERSION_TOKEN as an action repository secret.
+7. If the repository is a package to be released, add the release please personal access token as RELEASE_PLEASE_TOKEN as an action repository secret.
+8. If repository is private, remove the go report card workflow.
+9. Go through the workflow yaml files and delete the incorrect action permissions depending on whether the repository is private or not. The files have the necessary comments.
+10. Delete the entire release-please yaml file if the repository will not have releases.
+11. If repository is public, add CodeQL code scanning from Settings -> Code security and analysis, use default settings.
+12. Add Dependabot version updates from Settings -> Code security and analysis. Enable all options (If the repo is private, do not need to enable "Dependabot on self-hosted runners").
+13. Update the dependabot file. There should be two update sections, package-ecosystem "gomod" and package-ecosystem "github-actions". Should look similar to:
   ```
   -  package-ecosystem: "gomod"
     directory: "/"
