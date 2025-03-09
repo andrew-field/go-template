@@ -18,14 +18,15 @@
 3. Update this readme (badge links) with the correct REPONAME.
 4. Go to Code Cov and copy the badge markdown to the top and bottom of the readme. Copy the icicle svg link and replace the link in the code cov - svg markdown at the bottom.
 5. Add the global upload token from Code cov as CODECOV_TOKEN as an action repository secret.
-6. Add the bumb go version personal access token as BUMP_GO_VERSION_TOKEN as an action repository secret.
-7. If the repository is a package to be released, add the release please personal access token as RELEASE_PLEASE_TOKEN as an action repository secret.
+6. Add the bump go version personal access token as BUMP_GO_VERSION_TOKEN as an action repository secret.
+7.
+   - If the repository is a package to be released, add the release please personal access token as RELEASE_PLEASE_TOKEN as an action repository secret.
+   - If the repository is NOT a package to be released, delete the release-please yaml file.
 8. If repository is private, remove the go report card workflow.
 9. Go through the workflow yaml files and delete the incorrect action permissions depending on whether the repository is private or not. The files have the necessary comments.
-10. Delete the entire release-please yaml file if the repository will not have releases.
-11. If repository is public, add CodeQL code scanning from Settings -> Code security and analysis, use default settings.
-12. Add Dependabot version updates from Settings -> Code security and analysis. Enable all options (If the repo is private, do not need to enable "Dependabot on self-hosted runners").
-13. Update the dependabot file. There should be two update sections, package-ecosystem "gomod" and package-ecosystem "github-actions". Should look similar to:
+10. If repository is public, add CodeQL code scanning from Settings -> Code security and analysis, use default settings.
+11. Add Dependabot version updates from Settings -> Code security and analysis. Enable all options (If the repo is private, do not need to enable "Dependabot on self-hosted runners").
+12. Update the dependabot file. There should be two update sections, package-ecosystem "gomod" and package-ecosystem "github-actions". Should look similar to:
   ```
   -  package-ecosystem: "gomod"
     directory: "/"
@@ -36,9 +37,9 @@
     schedule:
       interval: "weekly"
   ```
-12. If public, in settings-> code security, enable private vulnerability reporting.
-13. In settings->branches, update branch protection rule to require status checks, the branch is up to date and commits require a signature. Can't add these rules if the repository is private.
-14. In settings->actions, allow GitHub actions to create and approve pull requests.
-15. Check "Automatically delete head branches" and "Always suggest updating pull request branches" in settings->general page.
+13. If public, in settings-> code security, enable private vulnerability reporting.
+14. In settings->branches, update branch protection rule to require status checks, the branch is up to date and commits require a signature. Can't add these rules if the repository is private.
+15. In settings->actions, allow GitHub actions to create and approve pull requests.
+16. Check "Automatically delete head branches" and "Always suggest updating pull request branches" in settings->general page.
 
 [Code cov icicle svg markdown goes here]
