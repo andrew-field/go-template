@@ -6,12 +6,14 @@ on:
   pull_request:
     branches: [master]
 
-  # Allows you to run this workflow manually from the Actions tab
+  # Allows you to run this workflow manually from the Actions tab.
   workflow_dispatch:
 
+# Permissions for the GITHUB_TOKEN.
 permissions: {}
 
 # For private repoistories, it should be this.
+# Permissions for the GITHUB_TOKEN. Needs read because the repository is private.
 #permissions:
   #contents: read
 
@@ -23,4 +25,4 @@ jobs:
       test_flags: -race
 
     secrets: inherit
-    # Codecov secret used by the build-test action. Codecov token (Use global token) needs to be added as a secret.
+    # Codecov secret used by the build-test action. CODECOV_TOKEN (Use global token) needs to be added as a secret.
