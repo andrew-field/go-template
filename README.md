@@ -19,10 +19,9 @@
 4. Go to Code Cov and copy the badge markdown to the top and bottom of the readme. Copy the icicle svg link and replace the link in the code cov - svg markdown at the bottom.
 5. Add the global upload token from Code cov as CODECOV_TOKEN as an action repository secret.
 6. Add the bump go version personal access token as BUMP_GO_VERSION_TOKEN as an action repository secret.
-7.
-   - If the repository is a package to be released, add the release please personal access token as RELEASE_PLEASE_TOKEN as an action repository secret.
+7. - If the repository is a package to be released, add the release please personal access token as RELEASE_PLEASE_TOKEN as an action repository secret.
    - If the repository is NOT a package to be released, delete the release-please yaml file.
-8. If repository is private, remove the go report card workflow.
+8. If the repository is private, remove the go report card workflow.
 9. Go through the workflow yaml files and delete the incorrect action permissions depending on whether the repository is private or not. The files have the necessary comments.
 10. If repository is public, add CodeQL code scanning from Settings -> Code security and analysis, use default settings.
 11. Add Dependabot version updates from Settings -> Code security and analysis. Enable all options (If the repo is private, do not need to enable "Dependabot on self-hosted runners").
