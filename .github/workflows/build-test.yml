@@ -12,7 +12,7 @@ on:
 # Permissions for the GITHUB_TOKEN.
 permissions: {}
 
-# For private repoistories, it should be this.
+# For private repositories, it should be this.
 # Permissions for the GITHUB_TOKEN. Needs read because the repository is private.
 #permissions:
   #contents: read
