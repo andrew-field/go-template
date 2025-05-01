@@ -46,6 +46,7 @@
  - Require status checks (Call build and test action).
  - Require the branch is up to date.
 14. In settings->actions, allow GitHub actions to create and approve pull requests.
-15. Check "Automatically delete head branches" and "Always suggest updating pull request branches" in settings->general page.
+15. In general setttings, check "Require contributors to sign off on web-based commits Loading", "Automatically delete head branches" and "Always suggest updating pull request branches".
+16. In general setttings, deselect "Allow merge commits".
 
 [Code cov icicle svg markdown goes here]
