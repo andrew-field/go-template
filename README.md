@@ -24,8 +24,7 @@
 8. If the repository is private, remove the go report card workflow.
 9. Go through the workflow yaml files and delete the incorrect action permissions depending on whether the repository is private or not. The files have the necessary comments.
 10. If repository is public, add CodeQL code scanning from Settings -> Code security and analysis, use default settings.
-11. Add Dependabot version updates from Settings -> Code security and analysis. Enable all options (If the repo is private, do not need to enable "Dependabot on self-hosted runners").
-12. Update the dependabot file. There should be two update sections, package-ecosystem "gomod" and package-ecosystem "github-actions". Should look similar to:
+11. Enable all settings in Settings -> Code security. This should include Dependabot version updates. Enabling this will add the corresponding yaml file. There should be two update sections, package-ecosystem "gomod" and package-ecosystem "github-actions". Should look similar to:
   ```
   -  package-ecosystem: "gomod"
     directory: "/"
@@ -36,9 +35,9 @@
     schedule:
       interval: "weekly"
   ```
-13. If public, in settings-> code security, enable private vulnerability reporting.
-14. In settings->branches, update branch protection rule to require status checks, the branch is up to date and commits require a signature. Can't add these rules if the repository is private.
-15. In settings->actions, allow GitHub actions to create and approve pull requests.
-16. Check "Automatically delete head branches" and "Always suggest updating pull request branches" in settings->general page.
+12. If public, in settings-> code security, enable private vulnerability reporting.
+13. In settings->branches, update branch protection rule to require status checks, the branch is up to date and commits require a signature. Can't add these rules if the repository is private.
+14. In settings->actions, allow GitHub actions to create and approve pull requests.
+15. Check "Automatically delete head branches" and "Always suggest updating pull request branches" in settings->general page.
 
 [Code cov icicle svg markdown goes here]
