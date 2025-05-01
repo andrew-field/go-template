@@ -42,6 +42,7 @@
  - Require signed commits.
  - Require a pull request.
  - Require conversation resolution before merging.
+ - Allowed merge methods: Squash, Rebase.
  - Require status checks (Call build and test action).
  - Require the branch is up to date.
 14. In settings->actions, allow GitHub actions to create and approve pull requests.
