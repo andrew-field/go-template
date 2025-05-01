@@ -36,7 +36,14 @@
       interval: "weekly"
   ```
 12. If public, in settings-> code security, enable private vulnerability reporting.
-13. In settings->branches, update branch protection rule to require status checks, the branch is up to date and commits require a signature. Can't add these rules if the repository is private.
+13. If the repository is public, in Settings->Branches, add a branch rule set, "MergeToMaster". Target branch default. The rules should be to
+ - (By default restrict deletions and block force pushes).
+ - Require linear history.
+ - Require signed commits.
+ - Require a pull request.
+ - Require conversation resolution before merging.
+ - Require status checks (Call build and test action).
+ - Require the branch is up to date.
 14. In settings->actions, allow GitHub actions to create and approve pull requests.
 15. Check "Automatically delete head branches" and "Always suggest updating pull request branches" in settings->general page.
 
