@@ -18,7 +18,7 @@
 3. Update this readme (badge links) with the correct REPONAME.
 4. Go to Code Cov and copy the badge markdown to the top and bottom of the readme. Copy the icicle svg link and replace the link in the code cov - svg markdown at the bottom.
 5. Add the global upload token from Code cov as CODECOV_TOKEN as an action repository secret.
-6. Add the bump go version personal access token as BUMP_GO_VERSION_TOKEN as an action repository secret.
+6. Add the create-pull-requests-app app id as APP_ID and the create-pull-requests-app private key as APP_PRIVATE_KEY as action repository secrets.
 7. - If the repository is a package to be released, add the release please personal access token as RELEASE_PLEASE_TOKEN as an action repository secret.
    - If the repository is NOT a package to be released, delete the release-please yaml file.
 8. If the repository is private, remove the go report card workflow.
