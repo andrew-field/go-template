@@ -22,7 +22,7 @@
 7. - If the repository is a package to be released, add the release please personal access token as RELEASE_PLEASE_TOKEN as an action repository secret.
    - If the repository is NOT a package to be released, delete the release-please yaml file.
 8. If the repository is private, remove the go report card workflow.
-9. Go through the workflow yaml files and delete the incorrect action permissions depending on whether the repository is private or not. The files have the necessary comments.
+9. Go through the workflow yaml files and check things look correct. Check if the -race flag should be removed in build-test.
 10. If repository is public, add CodeQL code scanning from Settings -> Code security and analysis, use default settings.
 11. Enable all settings in Settings -> Code security. This should include Dependabot version updates. Enabling this will add the corresponding yaml file. There should be two update sections, package-ecosystem "gomod" and package-ecosystem "github-actions". Should look similar to:
   ```
