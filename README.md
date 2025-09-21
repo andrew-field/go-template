@@ -48,5 +48,6 @@
 14. In settings->actions, allow GitHub actions to create and approve pull requests.
 15. In general setttings, check "Require contributors to sign off on web-based commits Loading", "Automatically delete head branches" and "Always suggest updating pull request branches".
 16. In general setttings, deselect "Allow merge commits".
+17. In general setttings, set the default commit message for squash merging to "Pull request title".
 
 [![codecov - svg](codecov svg link goes here)](https://codecov.io/gh/andrew-field/REPONAME)
