@@ -18,12 +18,12 @@
 3. Update this readme (badge links) with the correct REPONAME.
 4. Go to Code Cov and copy the badge markdown to the top and bottom of the readme. Copy the icicle svg link and replace the link in the code cov - svg markdown at the bottom.
 5. Add the global upload token from Code cov as CODECOV_TOKEN as an action repository secret.
-6. Add the create-pull-requests-app app id as APP_ID and the create-pull-requests-app private key as APP_PRIVATE_KEY as action repository secrets.
+6. Add the my-github-authorised-app app id as APP_ID and the my-github-authorised-app private key as APP_PRIVATE_KEY as action repository secrets.
 7. - If the repository is a package to be released, add the release please personal access token as RELEASE_PLEASE_TOKEN as an action repository secret.
    - If the repository is NOT a package to be released, delete the release-please yaml file.
 8. If the repository is private, remove the go report card workflow.
 9. Go through the workflow yaml files and check things look correct. Check if the -race flag should be removed in build-test.
-10. If repository is public, add CodeQL code scanning from Settings -> Code security and analysis, use default settings.
+10. If the repository is public, add CodeQL code scanning from Settings -> Code security and analysis, use default settings.
 11. Enable all settings in Settings -> Code security. This should include Dependabot version updates. Enabling this will add the corresponding yaml file. There should be two update sections, package-ecosystem "gomod" and package-ecosystem "github-actions". Should look similar to:
   ```
   -  package-ecosystem: "gomod"
