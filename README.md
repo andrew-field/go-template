@@ -49,5 +49,6 @@
 15. In general setttings, check "Require contributors to sign off on web-based commits Loading", "Automatically delete head branches" and "Always suggest updating pull request branches".
 16. In general setttings, deselect "Allow merge commits".
 17. In general setttings, set the default commit message for squash merging to "Pull request title".
+18. If the repository would benefit from the Biome formatter and linter, add a biome.json file.
 
 [![codecov - svg](codecov svg link goes here)](https://codecov.io/gh/andrew-field/REPONAME)
