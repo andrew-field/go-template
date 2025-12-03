@@ -30,10 +30,14 @@
     directory: "/"
     schedule:
       interval: "weekly"
+    cooldown:
+      default-days: 7
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
+    cooldown:
+      default-days: 7
   ```
 12. If public, in settings-> code security, enable private vulnerability reporting.
 13. If the repository is public, in Settings->Branches, add a branch rule set, "MergeToMaster". Target branch default. The rules should be to
