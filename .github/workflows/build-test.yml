@@ -16,8 +16,8 @@ jobs:
   build_test:
     name: Call build and test action
     permissions:
-      contents: read # The contents: read is not necessary for a public repository but it is necessary for the reusable workflow.
-    uses: andrew-field/reusable-workflows/.github/workflows/build-test.yml@7b87d70af7593c853b4afb3c69cb588a879e02f1 # v1.0.2
+      contents: read # The contents: read is not necessary for a public repository but it is necessary for the reusable workflow, which has it as a requirement.
+    uses: andrew-field/reusable-workflows/.github/workflows/build-test.yml@04e78ccda75eeebc0ce21a051299da5fc4b9913c # v1.5.18
     with:
       test_flags: -race
 
