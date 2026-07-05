@@ -18,7 +18,7 @@
 3. Update this readme (badge links) with the correct REPONAME.
 4. Go to Code Cov and copy the badge markdown to the top and bottom of the readme. Copy the icicle svg link and replace the link in the code cov - svg markdown at the bottom.
 5. Add the global upload token from Code cov as CODECOV_TOKEN as an action repository secret.
-6. Add the my-github-authorised-app app id as APP_ID and the my-github-authorised-app private key as APP_PRIVATE_KEY as action repository secrets.
+6. Add the my-github-authorised-app app client id as APP_CLIENT_ID and the my-github-authorised-app private key as APP_PRIVATE_KEY as action repository secrets.
 7. - If the repository is a package to be released, add the release please personal access token as RELEASE_PLEASE_TOKEN as an action repository secret.
    - If the repository is NOT a package to be released, delete the release-please yaml file.
 8. If the repository is private, remove the go report card workflow.
@@ -53,6 +53,5 @@
 15. In general setttings, check "Require contributors to sign off on web-based commits Loading", "Automatically delete head branches" and "Always suggest updating pull request branches".
 16. In general setttings, deselect "Allow merge commits".
 17. In general setttings, set the default commit message for squash merging to "Pull request title".
-18. If the repository would benefit from the Biome formatter and linter, add a biome.json file.
 
 [![codecov - svg](codecov svg link goes here)](https://codecov.io/gh/andrew-field/REPONAME)
