@@ -38,7 +38,8 @@
   ```
 10. If public, in settings-> code security, enable private vulnerability reporting.
 11. If the repository is public, in Settings->Branches, add a branch rule set, "MergeToMaster". Target branch default. The rules should be to
- - (By default restrict deletions and block force pushes).
+ - (By default restrict deletions).
+ - Uncheck "Block force pushes" (To allow force pushes).
  - Require linear history.
  - Require signed commits.
  - Require a pull request.
